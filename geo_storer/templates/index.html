@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>GeoData</title>
+</head>
+<body>
+
+    {% for name_full,name in files %}
+    <a href="{{url_for('download',name=name)}}">{{name_full}}</a><br>
+    {% endfor %}
+
+
+</body>
+</html>
